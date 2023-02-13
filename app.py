@@ -43,7 +43,7 @@ def Terrorist_Attack(data:feature):
     prediction = clf.predict([[Year, Month, Day, Extended, Suicide, Attack_Group,
        No_Of_Killed, No_Of_Wounded, Property, country, region,
        attacktype1, targtype1, natlty1, weaptype1]])
-    if(prediction[0] == 1):
+    if(prediction[0] == 2):
         prediction = 'Successful Terrorist Attack'
     else:
         prediction = 'Unsuccessful Terrorist Attack'
